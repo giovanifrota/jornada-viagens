@@ -5,14 +5,16 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 38px 48px;
     align-items: flex-start;
+    padding: 38px 48px;
     position: relative;
+    font-size: 24px;
 }
 .logo{
     width: 68px;
     height: 64px;
     display: inline-block;
+    margin: 10px 0 0 35px;
 }
 
 .navigation-menu{
@@ -39,8 +41,28 @@ input[type="checkbox"]:checked~nav{
 .list-links li a{
     color: var(--text-secundary-color);
     text-decoration: none;
+    font-weight: var(--menu-text-weight);
+    font-size: 24px;
 }
 
 nav{
     display: none;
+}
+
+@media screen and (min-width:768px) {
+   .navigation-menu{
+    margin-top: 0;
+    width: 467px;
+   }
+   .navigation-menu label{
+    display: none;
+   }
+   .navigation-menu nav{
+    display: block;
+   }
+   .navigation-menu ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }
 }
