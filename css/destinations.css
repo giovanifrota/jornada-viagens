@@ -42,7 +42,20 @@
     border-radius: 8px;
 }
 @media screen and (min-width: 768px) {
-    .destinations .button{
+    .destinations-items .button{
         width: 280px;
+    }
+}
+@media screen and (min-width:1024px) {
+    .destinations-items{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .destinations-items .section-title{
+        width: 100%;
+    }
+    .destinations-items .item{
+        width: 48%;
     }
 }
