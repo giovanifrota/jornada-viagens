@@ -1,0 +1,62 @@
+.payments h3{
+    margin-bottom: 24px;
+}
+.payments p{
+    margin-bottom: 24px;
+}
+
+.image-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 254px 182px;
+    grid-template-areas:
+     "bag passaport"
+     "people people";
+     gap: 24px;
+     width: 100%;
+}
+.payments .image-content .bag{
+    background: url(../img/Montagem\ bag\.png) no-repeat;
+    background-size: cover;
+    height: 254px;
+    width: 100%;
+}
+.payments .image-content .passaport{
+    background: url(../img/Montagem\ passaport.png) no-repeat;
+    background-size: cover;
+    height: 254px;
+    width: 100%;
+}
+.payments .image-content .people{
+    background: url(../img/Montagem\ people.png) no-repeat;
+    background-size: cover;
+    grid-column: span 2;
+}
+@media screen and (min-width:768px) {
+    .payments .image-content .bag{
+        background: url(../img/Montagem\ bag-tablet.png) no-repeat;
+        background-size: cover;
+    }
+    .payments .image-content .passaport{
+        background: url(../img/Montagem\ passaport-tablet.png) no-repeat;
+        background-size: cover;
+    }
+    .payments .image-content .people{
+        background: url(../img/Montagem\ people-tablet.png) no-repeat;
+        background-size: cover;
+        background-position: bottom;
+    }
+}
+@media screen and (min-width:1440px) {
+    .payments .content-container .content{
+        width: 360px;
+    }
+    .payments .content-container .image-content{
+        width: 790px;
+        margin: 0 0 0 23px;
+    }
+     .payments .content-container{
+        display: flex;
+        justify-content: space-between;
+    }
+}

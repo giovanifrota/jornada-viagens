@@ -14,12 +14,14 @@
 .destinations-items .item.tokyo .img-item {
     background: url(../img/tokyo-mobile.jpg);
     background-size: cover;
+    background-position: center;
     height: 360px;
 }
 
 .destinations-items .item.osaka .img-item{
     background: url(../img/osaka-mobile.jpg);
     background-size: cover;
+    background-position: center;
     height: 360px;
 }
 
