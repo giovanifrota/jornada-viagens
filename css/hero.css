@@ -3,6 +3,15 @@
     width: 100%;
     background: url(../img/hero-mobile.jpg) no-repeat;
     background-size: cover;
+    background-position: center;
+}
+
+.hero-footer{
+    height: 400px;
+    width: 100%;
+    background: url(../img/Imagem\ pré\ rodapé.png);
+    background-size: cover;
+    background-position: center;
 }
 
 .hero h2{
